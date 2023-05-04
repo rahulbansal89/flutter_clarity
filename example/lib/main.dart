@@ -16,8 +16,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _sessionId = 'Unknown';
   final _flutterClarityPlugin = FlutterClarityPlugin();
+  String _sessionId = 'Unknown';
 
   @override
   void initState() {
@@ -31,6 +31,9 @@ class _MyAppState extends State<MyApp> {
     // Platform messages may fail, so we use a try/catch PlatformException.
     // We also handle the message potentially returning null.
     try {
+      // Demo project id : fwof4hmuvb
+      await _flutterClarityPlugin.initialize(projectId: 'fwof4hmuvb');
+
       sessionId = await _flutterClarityPlugin.getCurrentSessionId() ??
           'Unknown clarity session';
     } on PlatformException {

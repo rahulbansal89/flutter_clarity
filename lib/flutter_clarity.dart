@@ -34,7 +34,7 @@ class FlutterClarityPlugin {
     String? logLevel = "None",
     bool? allowMeteredNetworkUsage = false,
     bool? enableWebViewCapture = true,
-    List<String>? allowedDomains,
+    List<String>? allowedDomains = const ["*"],
   }) async {
     if (!Platform.isAndroid) {
       // print("Clarity supports Android only for now.");
