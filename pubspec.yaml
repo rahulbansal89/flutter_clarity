@@ -4,7 +4,7 @@ homepage: https://github.com/rahulbansal89/flutter_clarity.git
 repository: https://github.com/rahulbansal89/flutter_clarity.git
 issue_tracker: https://github.com/rahulbansal89/flutter_clarity.git
 
-version: 1.0.0+2
+version: 1.0.0+3
 
 environment:
   sdk: '>=2.19.5 <3.0.0'
