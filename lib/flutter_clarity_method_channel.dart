@@ -10,7 +10,7 @@ class MethodChannelFlutterClarity extends FlutterClarityPlatform {
   final methodChannel = const MethodChannel('flutter_clarity');
 
   @override
-  void initialize({
+  Future<void> initialize({
     required String projectId,
     String? userId,
     String? logLevel = "None",

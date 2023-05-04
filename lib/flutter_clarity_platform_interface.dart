@@ -23,7 +23,7 @@ abstract class FlutterClarityPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  void initialize({
+  Future<void> initialize({
     required String projectId,
     String? userId,
     String? logLevel = "None",

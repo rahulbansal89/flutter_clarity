@@ -28,7 +28,7 @@ class FlutterClarityPlugin {
   /// @param enableWebViewCapture    Allows Clarity to capture the web views DOM content.
   /// @param allowedDomains    The whitelisted domains to allow Clarity to capture their DOM content.
   ///                          If it contains "*" as an element, all domains will be captured.
-  void initialize({
+  Future<void> initialize({
     required String projectId,
     String? userId,
     String? logLevel = "None",
@@ -37,7 +37,7 @@ class FlutterClarityPlugin {
     List<String>? allowedDomains,
   }) async {
     if (!Platform.isAndroid) {
-      print("Clarity supports Android only for now.");
+      // print("Clarity supports Android only for now.");
       return;
     }
 
@@ -61,7 +61,7 @@ class FlutterClarityPlugin {
   /// @param customUserId   The custom user id to set.
   void setCustomUserId(String customUserId) {
     if (!Platform.isAndroid) {
-      print("Clarity supports Android only for now.");
+      // print("Clarity supports Android only for now.");
       return;
     }
 
@@ -73,7 +73,7 @@ class FlutterClarityPlugin {
   /// @returns a promise that resolves to the current session id.
   Future<String?> getCurrentSessionId() async {
     if (!Platform.isAndroid) {
-      print("Clarity supports Android only for now.");
+      // print("Clarity supports Android only for now.");
       return Future(() => "");
     }
 
